@@ -1,0 +1,79 @@
+/* [project]/src/app/globals.css [app-client] (css) */
+:root {
+  --background: #fff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+.header {
+  color: #fff;
+  background-color: #212529;
+  font-family: sans-serif;
+  margin-bottom: 0;
+}
+
+.header img {
+  position: absolute;
+  align-content: center;
+}
+
+button {
+  display: block;
+  align-content: center;
+  float: right;
+  border-radius: 15%;
+  background-color: #ff4500;
+  color: #fff;
+}
+
+.slider {
+  color: #ff4500;
+  background-image: url("https://www.swtgulf.com/assets/img/hero/h1_hero.jpg");
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.contacts {
+}
+
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+/*# sourceMappingURL=src_app_globals_b52d8e88.css.map*/

@@ -1,95 +1,112 @@
-import Image from "next/image";
+import React from "react";
+// import ReactDOM from "react-dom/client";
+// import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <div>
+      <Header />
+      <Slider />
+      <Contacts />
+      {/* <Services />
+      <Types />
+      <About />
+      <More />
+      <Request />
+      <Team />
+      <Clients />
+      <News />
+      <Tourist />
+      <Footer /> */}
     </div>
   );
 }
+
+function Header() {
+  const style = {
+    color: "white",
+    backgroundColor: "black",
+    position: "absolute",
+    fontSize: "50px",
+    textTransform: "uppercase",
+  };
+  // const style = {};
+  return (
+    <header className="header">
+      <div className="logo">
+        <img src="logo.jpg"></img>
+      </div>
+      <button className="menu">MENU</button>
+      <h1 style={styles} className="header">
+        LOGISTIC EXPRESS
+      </h1>
+    </header>
+  );
+}
+
+function Slider() {
+  return (
+    <main className="slider">
+      <h2>
+        Safe & Reliable Logistic Solutions
+        <span>Since 1992!</span>
+      </h2>
+      <form>Your tracking ID</form>
+      <input type="text" />
+      <button>TRACK & TRACE</button>
+      <h3>FOR ORDER STATUS INQUIRY</h3>
+    </main>
+  );
+}
+
+function Contacts() {
+  return (
+    <>
+      <div className="Info">
+        <p>Call Us Anytime</p>
+        <h2>Office no: +971 42398637 +971 50 9365888</h2>
+      </div>
+      <div className="Time">
+        <p>Sunday CLOSED</p>
+        <h2>Mon - Sat 8.00 - 18.00</h2>
+        <div className="place">
+          <p>Dubai, SC 29201</p>
+          <h2>UAE, DUBAI</h2>
+          <p>Office location</p>
+          <h2>
+            Al bayan building near carrefour 6th floor Office number 658 Dip 1
+            Dubai
+          </h2>
+        </div>
+      </div>
+    </>
+  );
+}
+
+// function Services() {}
+
+// function Types() {}
+
+// function About() {}
+
+// function More() {}
+
+// function Request() {}
+
+// function Team() {}
+
+// function Clients() {}
+
+// function News() {}
+
+// function Tourist() {}
+
+// function Footer() {}
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <Home />
+//   </React.StrictMode>
+// );
